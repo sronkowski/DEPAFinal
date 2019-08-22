@@ -1,0 +1,2 @@
+read_path: ../data/zillow_data/MortgageRateConventionalFixed.csv
+write_path: ../data/rates

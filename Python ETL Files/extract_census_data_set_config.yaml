@@ -1,0 +1,22 @@
+api_key: f2637c6c0e3633aa1204099bdebc27bd21acd284
+geography: zip%20code%20tabulation%20area:*
+base_url: https://api.census.gov/data/{}/acs/acs5?get={}&for={}&key={}
+write_path: ../data/census/
+data_sets:
+    census_housing_occupancy:
+        fields:
+            occupied_housing_units: B25002_002E
+            vacant_housing_units: B25002_003E
+            total_housing_units: B25001_001E
+    census_totals:
+        fields:
+            median_age: B01002_001E
+            inflation_adj_median_income: B19013_001E
+            inflation_adj_income_benefits: B19001_001E
+            total_pop: B01003_001E
+            average_household_size: B25010_001E
+            total_households: B11001_001E
+            family_households: B11001_002E
+            non_family_households: B11001_007E
+            pop_age_3_plus_in_school: B14001_002E
+            

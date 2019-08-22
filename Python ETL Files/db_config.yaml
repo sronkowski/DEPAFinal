@@ -1,0 +1,4 @@
+db_user: root
+db_password: aplusplease
+db_host: 34.66.131.5
+db_schema: real_estate_value

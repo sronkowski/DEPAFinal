@@ -1,0 +1,7 @@
+read_path: ../data/census/
+write_path: ../data/census
+file_name_to_table_map:
+    census_population.csv: 
+        table: census_population
+    census_housing_occupancy.csv: 
+        table: census_housing_occupancy

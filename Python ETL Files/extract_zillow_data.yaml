@@ -1,0 +1,2 @@
+urls: [http://files.zillowstatic.com/research/public/MortgageRateConventionalFixed.csv, http://files.zillowstatic.com/research/public/Zip/Sale_Prices_Zip.csv, http://files.zillowstatic.com/research/public/Zip/Zip_MedianListingPrice_AllHomes.csv, http://files.zillowstatic.com/research/public/Zip/Zip_MedianListingPricePerSqft_AllHomes.csv, http://files.zillowstatic.com/research/public/Zip/Zip_MedianRentalPrice_Mfr5Plus.csv, http://files.zillowstatic.com/research/public/Zip/Zip_MedianRentalPricePerSqft_2Bedroom.csv]
+write_path: ../data/zillow_data/

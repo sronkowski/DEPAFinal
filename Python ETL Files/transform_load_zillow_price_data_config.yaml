@@ -1,0 +1,19 @@
+read_path: ../data/zillow_data/original/
+write_path: ../data/zillow_data
+drop_list: ["City","State","Metro","CountyName","SizeRank","StateName","RegionID"]
+file_name_to_table_map:
+    Sale_Prices_Zip.csv: 
+        table: zillow_sale_price
+        value_name: sale_price
+    Zip_MedianListingPricePerSqft_AllHomes.csv: 
+        table: zillow_list_price_per_sqft
+        value_name: list_price_per_sqft
+    Zip_MedianListingPrice_AllHomes.csv: 
+        table: zillow_list_price
+        value_name: list_price
+    Zip_MedianRentalPrice_Multifamily5PlusUnits.csv: 
+        table: zillow_rental_price
+        value_name: rental_price
+    Zip_MedianRentalPricePerSqft_2Bedroom.csv: 
+        table: zillow_rental_price_per_sqft
+        value_name: rental_price_per_sqft

@@ -1,0 +1,4 @@
+db_user: root
+db_password: rootroot
+db_host: localhost
+db_schema: real_estate_value

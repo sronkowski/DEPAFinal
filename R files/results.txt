@@ -1,0 +1,66 @@
+# Predictive Model results for House Price
+
+> summary(model1)
+
+Call:
+lm(formula = IL$House_Price ~ IL$Income)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-307030  -74233    4575   65085  559758 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -2.042e+05  3.369e+02  -606.1   <2e-16 ***
+IL$Income    6.423e+00  3.595e-03  1786.8   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 110400 on 1048573 degrees of freedom
+Multiple R-squared:  0.7528,	Adjusted R-squared:  0.7528 
+F-statistic: 3.193e+06 on 1 and 1048573 DF,  p-value: < 2.2e-16
+
+> summary(model2)
+
+Call:
+lm(formula = IL$House_Price ~ IL$Income + IL$Population)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-318339  -70711    6958   66525  552158 
+
+Coefficients:
+                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   -1.690e+05  5.073e+02 -333.10   <2e-16 ***
+IL$Income      6.290e+00  3.856e-03 1631.32   <2e-16 ***
+IL$Population -7.312e-01  7.890e-03  -92.68   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 110000 on 1048572 degrees of freedom
+Multiple R-squared:  0.7548,	Adjusted R-squared:  0.7548 
+F-statistic: 1.614e+06 on 2 and 1048572 DF,  p-value: < 2.2e-16
+
+> summary(model3)
+
+Call:
+lm(formula = IL$House_Price ~ IL$Income + IL$Population + IL$Per_SqFt_Price)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-288500  -36809     544   37340  447623 
+
+Coefficients:
+                    Estimate Std. Error t value Pr(>|t|)    
+(Intercept)       -3.347e+05  3.279e+02 -1020.7   <2e-16 ***
+IL$Income          4.497e+00  2.662e-03  1688.9   <2e-16 ***
+IL$Population     -6.990e-01  4.737e-03  -147.6   <2e-16 ***
+IL$Per_SqFt_Price  1.757e+03  1.288e+00  1363.9   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 66030 on 1048571 degrees of freedom
+Multiple R-squared:  0.9116,	Adjusted R-squared:  0.9116 
+F-statistic: 3.605e+06 on 3 and 1048571 DF,  p-value: < 2.2e-16
+
+> 
